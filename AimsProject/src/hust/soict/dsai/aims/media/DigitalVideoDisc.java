@@ -26,10 +26,7 @@ public class DigitalVideoDisc extends Disc implements Playable {
                 " - Cost: " + this.getCost() + "$";
     }
 
-    public boolean isMatch(String title) {
-        return this.getTitle().toLowerCase().contains(title.toLowerCase());
-    }
-
+    // Play method
     public void play() {
         System.out.println("Playing DVD: " + this.getTitle());
         System.out.println("DVD length: " + this.getLength());
