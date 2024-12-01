@@ -55,6 +55,9 @@ public abstract class Media implements Comparable<Media> {
     public boolean isMatch(String title) {
         return this.getTitle().toLowerCase().contains(title.toLowerCase());
     }
+    public void play() {
+        System.out.println("Playing media");
+    }
 
     @Override
     public boolean equals(Object obj) {
